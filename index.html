@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Document</title>
+ </head>
+ <h1 class="mixer">Code-Mixer</h1>
+ <body>
+    <button id="get-code">Get Code</button>
+    <button id="start-listening">Listen</button>
+  <div class="input-holder">
+    <div class="pen-input">
+        <h3>HTML</h3>
+        <textarea class="pen-box" id="pen-HTML" name="penHTML"></textarea>
+    </div>
+    <div class="pen-input">
+        <h3>CSS</h3>
+        <textarea class="pen-box" id="pen-CSS" name="penCSS"></textarea>
+    </div>
+    <div class="pen-input">
+        <h3>JS</h3>
+        <textarea class="pen-box" id="pen-JS" name="penJS"></textarea>
+    </div>
+</div>
+
+<iframe id="results-frame" src="results.html"></iframe> 
+<div id="results-box"></div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/voicerec.js"></script>
+  <script src="js/filesaver.js"></script>
+</body>
+
+
+ </html> 
+  
+  
