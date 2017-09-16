@@ -13,18 +13,22 @@ $(document).ready(function(){
       'change page': function() {
         $selected = $writeHTML;
         selectWriteType($selected);
-        console.log("HTML");
       },
-      'change styles': function() {
+      'change style': function() {
         $selected = $writeCSS;
         selectWriteType($selected);
-        console.log("CSS");
       },
       'change javascript': function() {
         $selected = $writeJS;
         selectWriteType($selected);
-        console.log("Javascript");
       },
+      'tag one': function() {
+        $selected.val($selected.val() + "<h1>");
+      },
+      'close tag one': function() {
+        $selected.val($selected.val() + "</h1>");
+      }
+      
     };
 
     // Add our commands to annyang
@@ -42,5 +46,6 @@ $(document).ready(function(){
 });
 
 function selectWriteType(type){
+  $(".pen-box").css("border", "1px solid black");
   type.css("border", "1px solid red");
 }
