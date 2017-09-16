@@ -30,6 +30,8 @@ $(document).ready(function(){
     // Add our commands to annyang
     annyang.addCommands(commands);
 
+    annyang.debug();
+
     annyang.setLanguage("en-GB");
 
     // Start listening. You can call this here, or attach this call to an event, button, etc.
