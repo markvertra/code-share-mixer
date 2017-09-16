@@ -23,70 +23,126 @@ $(document).ready(function(){
         selectWriteType($selected);
       },
       'tag one': function() {
-        console.log("TAG ONE");
         $("#pen-HTML").val($("#pen-HTML").val() + "<h1>");
       },
       'close tag one': function() {
-        console.log("CLOSE TAG ONE");
         $("#pen-HTML").val($("#pen-HTML").val() + "</h1>");
       },
+      'tags one': function() {
+        $("#pen-HTML").val($("#pen-HTML").val() + "<h1></h1>");
+      },
       'tag two': function() {
-        console.log("TAG TWO");
         $("#pen-HTML").val($("#pen-HTML").val() + "<h2>");
       },
       'close tag two': function() {
-        console.log("CLOSE TAG TWO");
         $("#pen-HTML").val($("#pen-HTML").val() + "</h2>");
       },
       'tag three': function() {
-        console.log("TAG THREE");
         $("#pen-HTML").val($("#pen-HTML").val() + "<h3>");
       },
       'tag three': function() {
-        console.log("CLOSE TAG THREE");
         $("#pen-HTML").val($("#pen-HTML").val() + "</h3>");
       },
       'tag four': function() {
-        console.log("TAG FOUR");
         $("#pen-HTML").val($("#pen-HTML").val() + "<h4>");
       },
       'close tag four': function() {
-        console.log("CLOSE TAG FOUR");
         $("#pen-HTML").val($("#pen-HTML").val() + "</h4>");
       },
       'tag five': function() {
-        console.log("TAG FIVE");
         $("#pen-HTML").val($("#pen-HTML").val() + "<h5>");
       },
       'close tag five': function() {
-        console.log("CLOSE TAG FIVE");
         $("#pen-HTML").val($("#pen-HTML").val() + "</h5>");
       },
       'tag six': function() {
-        console.log("TAG SIX");
         $("#pen-HTML").val($("#pen-HTML").val() + "<h6>");
       },
       'close tag six': function() {
-        console.log("TAG SIX");
         $("#pen-HTML").val($("#pen-HTML").val() + "</h6>");
       },
       'tag p': function() {
-        console.log("TAG P");
         $("#pen-HTML").val($("#pen-HTML").val() + "<p>");
       },
       'close tag p': function() {
-        console.log("TAG P");
         $("#pen-HTML").val($("#pen-HTML").val() + "</p>");
       },
       'tag div': function() {
-        console.log("TAG DIV");
         $("#pen-HTML").val($("#pen-HTML").val() + "<div>");
       },
       'close tag div': function() {
-        console.log("CLOSE TAG DIV");
-        $("#pen-HTML").val($("#pen-HTML").val() + "<div>");
+        $("#pen-HTML").val($("#pen-HTML").val() + "</div>");
       },
-        '*anything': anything
+      'tag a': function() {
+        $("#pen-HTML").val($("#pen-HTML").val() + "<a>");
+      },
+      'close tag a': function() {
+        $("#pen-HTML").val($("#pen-HTML").val() + "</a>");
+      },
+      'tag break': function() {
+        $("#pen-HTML").val($("#pen-HTML").val() + "<br>");
+      },
+      'tag rule': function() {
+        $("#pen-HTML").val($("#pen-HTML").val() + "<hr>");
+      },
+      'tag form': function() {
+        $("#pen-HTML").val($("#pen-HTML").val() + "<form>");
+      },
+      'close tag form': function() {
+        $("#pen-HTML").val($("#pen-HTML").val() + "</form>");
+      },
+      'tag input': function() {
+        $("#pen-HTML").val($("#pen-HTML").val() + "<input>");
+      },
+      'tag label': function() {
+        $("#pen-HTML").val($("#pen-HTML").val() + "<label>");
+      },
+      'close tag label': function() {
+        $("#pen-HTML").val($("#pen-HTML").val() + "</label>");
+      },
+      'tag audio': function() {
+        $("#pen-HTML").val($("#pen-HTML").val() + "<audio>");
+      },
+      'close tag audio': function() {
+        $("#pen-HTML").val($("#pen-HTML").val() + "</audio>");
+      },
+      'tag unordered list': function() {
+        $("#pen-HTML").val($("#pen-HTML").val() + "<ul>");
+      },
+      'close tag unordered list': function() {
+        $("#pen-HTML").val($("#pen-HTML").val() + "</ul>");
+      },
+      'tag ordered list': function() {
+        $("#pen-HTML").val($("#pen-HTML").val() + "<ol>");
+      },
+      'close tag ordered list': function() {
+        $("#pen-HTML").val($("#pen-HTML").val() + "</ol>");
+      },
+      'tag list': function() {
+        $("#pen-HTML").val($("#pen-HTML").val() + "<li>");
+      },
+      'close tag list': function() {
+        $("#pen-HTML").val($("#pen-HTML").val() + "</li>");
+      },
+      'style one': function() {
+        $("#pen-CSS").val($("#pen-CSS").val() + "h1 { }");
+      },
+      'style two': function() {
+        $("#pen-CSS").val($("#pen-CSS").val() + "h2 { }");
+      },
+      'style three': function() {
+        $("#pen-CSS").val($("#pen-CSS").val() + "h3 { }");
+      },
+      'style four': function() {
+        $("#pen-CSS").val($("#pen-CSS").val() + "h4 { }");
+      },
+      'style five': function() {
+        $("#pen-CSS").val($("#pen-CSS").val() + "h5 { }");
+      },
+      'style six': function() {
+        $("#pen-CSS").val($("#pen-CSS").val() + "h6 { }");
+      },
+      "*anything": anything
     };
 
     // Add our commands to annyang

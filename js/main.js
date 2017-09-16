@@ -1,9 +1,6 @@
 $(document).ready(function(){
 
-  $("#get-code").on("click", function(){
-    getInfo();
-  });
-  
+  setInterval(getInfo, 1000);
 
 });
 
