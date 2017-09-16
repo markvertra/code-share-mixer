@@ -1,12 +1,27 @@
 $(document).ready(function(){
 
+
+
   if (annyang) {
     console.log("annyang")
+    let $writeHTML = $("#pen-HTML");
+    let $writeCSS = $("#pen-CSS");
+    let $writeJS = $("#pen-JS");
+    let $selected; 
     // Let's define our first command. First the text we expect, and then the function it should call
     var commands = {
-      'hello': function() {
-        console.log("hello");
-      }
+      'change HTML': function() {
+        $selected = $writeHTML;
+        console.log("HTML");
+      },
+      'change CSS': function() {
+        $selected = $writeCSS;
+        console.log("CSS");
+      },
+      'change JS': function() {
+        $selected = $writeJS;
+        console.log("Javascript");
+      },
     };
 
     // Add our commands to annyang
