@@ -1,10 +1,11 @@
 $(document).ready(function(){
 
   if (annyang) {
+    console.log("annyang")
     // Let's define our first command. First the text we expect, and then the function it should call
     var commands = {
       'hello': function() {
-        $('#pen-html').html("Hello");
+        console.log("hello");
       }
     };
 
@@ -12,10 +13,7 @@ $(document).ready(function(){
     annyang.addCommands(commands);
 
     // Start listening. You can call this here, or attach this call to an event, button, etc.
-    $("#listen").on("click", function(){
-      annyang.start();
-    });
-    
+    annyang.start();
     
   }
 
