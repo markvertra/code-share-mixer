@@ -23,10 +23,12 @@ $(document).ready(function(){
         selectWriteType($selected);
       },
       'tag one': function() {
-        $selected.val($selected.val() + "<h1>");
+        console.log("TAG ONE");
+        $("#pen-HTML").val($("#pen-HTML").val() + "<h1>");
       },
       'close tag one': function() {
-        $selected.val($selected.val() + "</h1>");
+        console.log("CLOSE TAG ONE");
+        $("#pen-HTML").val($("#pen-HTML").val() + "<h1>");
       }
       
     };
