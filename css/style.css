@@ -2,14 +2,71 @@
   box-sizing: border-box;
 }
 
+
+
 .pen-input {
   height: 500px;
-  width: 33%
+  width: 100%
 }
 
 .pen-box {
   width: 100%;
   height: 400px;
+}
+
+@media (max-width: 700px) {
+    .pen-holder-CSS, .pen-holder-JS,
+    .page-title, .jquery-giver {
+    display: none;
+  }
+    .pen-input {
+      height: 27vh;
+      width: 100%
+  }
+
+    .pen-box {
+      width: 100%;
+      height: 25vh;
+  }
+
+    .type-selected {
+      position: absolute;
+      top: -2%;
+      right: 2%;
+      opacity: 0.8;
+      color: lightcoral;
+    }
+
+    .change-HTML {
+      position: absolute;
+      top: -2%;
+      right: 45%;
+      opacity: 0.3;
+    }
+
+    .change-CSS {
+      position: absolute;
+      top: -2%;
+      right: 30%;
+      opacity: 0.3;
+    }
+
+    .change-JS {
+      position: absolute;
+      top: -2%;
+      right: 15%;
+      opacity: 0.3;
+    }
+}
+
+.change {
+  display: inline;
+}
+
+@media (min-width: 700px) { 
+  .change  {
+  display: none;
+ }
 }
 
 #results-frame {
@@ -21,7 +78,7 @@
 
 #results-box {
   border: 1px solid black;
-  height: 500px;
+  height: 70vh;
   width: 100%;
 }
 

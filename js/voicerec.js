@@ -142,6 +142,7 @@ $(document).ready(function(){
       'style six': function() {
         $("#pen-CSS").val($("#pen-CSS").val() + "h6 { }");
       },
+      'add query': giveMeJQuery(),
       "*anything": anything
     };
 

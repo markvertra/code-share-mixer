@@ -7,21 +7,20 @@
    <link rel="stylesheet" href="css/style.css">
    <title>Document</title>
  </head>
- <h1 class="mixer">Code-Mixer</h1>
+ <h1 class="page-title">Code-Mixer</h1>
+ <button class="jquery-giver">Give Me JQuery</button>
  <body>
-    <button id="get-code">Get Code</button>
-    <button id="start-listening">Listen</button>
   <div class="input-holder">
-    <div class="pen-input">
-        <h3>HTML</h3>
+    <div class="pen-input pen-holder-HTML">
+        <h3 class="type-selected">HTML</h3> <h5 class="change change-CSS">Write CSS</h5> <h5 class="change change-JS">Write JS</h5>
         <textarea class="pen-box" id="pen-HTML" name="penHTML"></textarea>
     </div>
-    <div class="pen-input">
-        <h3>CSS</h3>
+    <div class="pen-input pen-holder-CSS">
+        <h3 class="type-selected">CSS</h3> <h5 class="change change-HTML">Write HTML</h5> <h5 class="change change-JS">Write JS</h5>
         <textarea class="pen-box" id="pen-CSS" name="penCSS"></textarea>
     </div>
-    <div class="pen-input">
-        <h3>JS</h3>
+    <div class="pen-input pen-holder-JS">
+        <h3 class="type-selected">JS</h3> <h5 class="change change-HTML">Write HTML</h5> <h5 class="change change-CSS">Write CSS</h5>
         <textarea class="pen-box" id="pen-JS" name="penJS"></textarea>
     </div>
 </div>
